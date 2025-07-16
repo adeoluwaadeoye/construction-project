@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     siteName: "MYCLIENT",
     images: [
       {
-        url: "/icon.jpg", // ✅ Must be in /public and accessible
+        url: "/icon.svg", // ✅ Must be in /public and accessible
         width: 1200,
         height: 630,
         alt: "MYCLIENT Construction Preview Image",
@@ -61,11 +61,11 @@ export const metadata: Metadata = {
     title: "MYCLIENT | Construction Website Project",
     description:
       "Explore Nigeria's trusted construction partner. MYCLIENT builds value that lasts.",
-    images: ["/icon.jpg"],
+    images: ["/icon.svg"],
     creator: "@adeoluwaadeoye7",
   },
   icons: {
-    icon: "/globe.svg", // ✅ Make sure this exists in /public
+    icon: "/icon.webp", // ✅ Make sure this exists in /public
     apple: "/apple-touch-icon.png", // ✅ Create 180x180 version for Apple devices
   },
 };
