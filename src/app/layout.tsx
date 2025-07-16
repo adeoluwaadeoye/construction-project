@@ -65,12 +65,12 @@ export const metadata: Metadata = {
     description:
       "Explore Nigeria's trusted construction partner. MYCLIENT builds value that lasts.",
     images: ["/og-image.jpg"],
-    creator: "@yourhandle", // optional
+    creator: "@adeoluwaadeoye7", // optional
   },
   icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon.ico",
-    apple: "/apple-touch-icon.png",
+    icon: "/og-image.jpg",
+    shortcut: "/og-image.jpg",
+    apple: "/og-image.jpg",
   },
 };
 
