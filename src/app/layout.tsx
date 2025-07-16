@@ -21,6 +21,10 @@ const cormorant = Cormorant_Garamond({
   display: "swap",
 });
 
+// ✅ Base domain (change if self-hosted)
+const siteUrl = "https://thebuilderng.netlify.app";
+const ogImage = `${siteUrl}/og-image.jpg`;
+
 export const metadata: Metadata = {
   title: {
     default: "MYCLIENT | Construction Website Project",
@@ -28,7 +32,7 @@ export const metadata: Metadata = {
   },
   description:
     "We design, build, and deliver durable homes and commercial structures across Nigeria — with a focus on quality, trust, and long-term value.",
-  metadataBase: new URL("https://thebuilderng.netlify.app"),
+  metadataBase: new URL(siteUrl),
   keywords: [
     "Construction",
     "MYCLIENT",
@@ -43,14 +47,14 @@ export const metadata: Metadata = {
     title: "MYCLIENT | Construction Website Project",
     description:
       "Durable homes and commercial structures built with precision and trust. Explore our engineering and building services.",
-    url: "https://thebuilderng.netlify.app",
+    url: siteUrl,
     siteName: "MYCLIENT",
     images: [
       {
-        url: "/icon.webp", // ✅ Must be in /public and accessible
+        url: ogImage,
         width: 1200,
         height: 630,
-        alt: "MYCLIENT Construction Preview Image",
+        alt: "MYCLIENT Construction OG Image",
       },
     ],
     type: "website",
@@ -61,12 +65,13 @@ export const metadata: Metadata = {
     title: "MYCLIENT | Construction Website Project",
     description:
       "Explore Nigeria's trusted construction partner. MYCLIENT builds value that lasts.",
-    images: ["/icon.webp"],
+    images: [ogImage],
     creator: "@adeoluwaadeoye7",
   },
   icons: {
-    icon: "/icon.webp", // ✅ Make sure this exists in /public
-    apple: "/apple-touch-icon.png", // ✅ Create 180x180 version for Apple devices
+    icon: "/icon.webp",
+    shortcut: "/icon.webp",
+    apple: "/apple-touch-icon.png",
   },
 };
 
@@ -78,12 +83,24 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* Optional: extra meta fallback in case OG doesn't hydrate */}
-        <meta property="og:image" content="/icon.jpg" />
-        <meta property="og:type" content="website" />
+        {/* 🔁 Redundant fallback tags for full OG support */}
         <meta property="og:title" content="MYCLIENT | Construction Website Project" />
-        <meta property="og:description" content="Durable homes and commercial structures built with precision and trust." />
+        <meta
+          property="og:description"
+          content="Durable homes and commercial structures built with precision and trust."
+        />
+        <meta property="og:image" content={ogImage} />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={siteUrl} />
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="MYCLIENT | Construction Website Project" />
+        <meta
+          name="twitter:description"
+          content="Explore Nigeria's trusted construction partner. MYCLIENT builds value that lasts."
+        />
+        <meta name="twitter:image" content={ogImage} />
       </head>
       <body
         className={`
