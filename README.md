@@ -100,8 +100,8 @@ npm run dev
 
 For freelance inquiries, partnership, or custom builds:
 
-- 📧 Email: [info@myclient.ng](mailto:info@myclient.ng)
-- 🌍 Website: [adeoluwa.dev](https://adeoluwa.dev) *(optional)*
+- 📧 Email: [info@myclient.ng](mailto:adeoluadeoye7@gmail.com)
+- 🌍 Website: [adeoluwa.dev](https://adeoluadeoye.netlify.app)
 - 📱 WhatsApp CTA available on mobile devices
 
 ---
