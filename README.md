@@ -1,36 +1,115 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🏗️ Construction Website Project
 
-## Getting Started
+A professional, fully responsive construction company website built with **Next.js**, **Tailwind CSS**, and **Framer Motion**. This project showcases a high-performance frontend architecture designed for real-world businesses in the building and infrastructure sector.
 
-First, run the development server:
+---
+
+## 🔍 Overview
+
+The Construction Website Project is designed to represent a modern construction brand with a clean, credible digital presence. It includes all essential pages—Home, About, Services, Projects, Contact—alongside smooth animations, call-to-actions, and trust-building UI elements.
+
+---
+
+## 🚀 Key Features
+
+- ✅ **Next.js 14 (App Router)** – Performance-focused, SEO-friendly framework
+- ✅ **Tailwind CSS** – Utility-first, mobile-responsive styling
+- ✅ **Framer Motion** – Smooth scroll and element animations
+- ✅ **Responsive Hero Sections** – Background overlays with animated content
+- ✅ **Sticky Navigation** – Dynamic top bar with scroll-hide behavior
+- ✅ **WhatsApp Floating CTA** – Mobile-first communication trigger with pulse animation
+- ✅ **Contact Form** – Email-ready (with validation and spinner feedback)
+- ✅ **Animated Counters** – Scroll-triggered statistics
+- ✅ **Project & Service Pages** – Modular and scalable layouts
+- ✅ **Tablet/Mobile Optimization** – Pixel-perfect design across all devices
+
+---
+
+## 📁 Project Structure
+
+```
+src/
+├── app/                  # App router pages
+├── components/           # Reusable UI components
+│   ├── Header.tsx
+│   ├── Footer.tsx
+│   ├── Hero.tsx
+│   ├── WhyChooseUs.tsx
+│   └── ServicePreview.tsx
+├── public/               # Static assets (images, icons)
+├── styles/               # Tailwind/global styles
+```
+
+---
+
+## 🧰 Tech Stack
+
+| Tool             | Purpose                               |
+|------------------|----------------------------------------|
+| Next.js          | Server-side rendering, routing         |
+| Tailwind CSS     | Utility-based styling                  |
+| TypeScript       | Type safety                            |
+| Framer Motion    | Animations and transitions             |
+| React Icons      | Scalable icons                         |
+| EmailJS/FormSubmit| Email integration for contact form    |
+
+---
+
+## 📦 Installation & Setup
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/adeoluwaadeoye/construction-project.git
+cd construction-project
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+3. Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open `http://localhost:3000` in your browser to view the site.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🌐 Live Demo
 
-## Learn More
+> Coming soon... (or deploy on [Vercel](https://vercel.com/) / [Netlify](https://netlify.com/))
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 💡 Future Improvements
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- CMS integration (e.g., Sanity or Strapi)
+- Blog/news updates section
+- Admin dashboard for project uploads
+- Multi-language support
+- Accessibility enhancements (WCAG)
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📬 Contact
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+For freelance inquiries, partnership, or custom builds:
+
+- 📧 Email: [info@myclient.ng](mailto:info@myclient.ng)
+- 🌍 Website: [adeoluwa.dev](https://adeoluwa.dev) *(optional)*
+- 📱 WhatsApp CTA available on mobile devices
+
+---
+
+## 📄 License
+
+This project is licensed for personal and educational use. For commercial licensing, please contact the author.
+
+---
+
+**Crafted with precision and code 💻 by [Adeoluwa Adeoye](https://github.com/adeoluwaadeoye)**
