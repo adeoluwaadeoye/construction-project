@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     siteName: "MYCLIENT",
     images: [
       {
-        url: "/og-image.jpg", // ✅ Must be in /public and accessible
+        url: "/icon.jpg", // ✅ Must be in /public and accessible
         width: 1200,
         height: 630,
         alt: "MYCLIENT Construction Preview Image",
@@ -61,11 +61,11 @@ export const metadata: Metadata = {
     title: "MYCLIENT | Construction Website Project",
     description:
       "Explore Nigeria's trusted construction partner. MYCLIENT builds value that lasts.",
-    images: ["/og-image.jpg"],
+    images: ["/icon.jpg"],
     creator: "@adeoluwaadeoye7",
   },
   icons: {
-    icon: "/favicon.ico", // ✅ Make sure this exists in /public
+    icon: "/globe.svg", // ✅ Make sure this exists in /public
     apple: "/apple-touch-icon.png", // ✅ Create 180x180 version for Apple devices
   },
 };
@@ -79,7 +79,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         {/* Optional: extra meta fallback in case OG doesn't hydrate */}
-        <meta property="og:image" content="/og-image.jpg" />
+        <meta property="og:image" content="/icon.jpg" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="MYCLIENT | Construction Website Project" />
         <meta property="og:description" content="Durable homes and commercial structures built with precision and trust." />
