@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     siteName: "MYCLIENT",
     images: [
       {
-        url: "/icon.svg", // ✅ Must be in /public and accessible
+        url: "/icon.webp", // ✅ Must be in /public and accessible
         width: 1200,
         height: 630,
         alt: "MYCLIENT Construction Preview Image",
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
     title: "MYCLIENT | Construction Website Project",
     description:
       "Explore Nigeria's trusted construction partner. MYCLIENT builds value that lasts.",
-    images: ["/icon.svg"],
+    images: ["/icon.webp"],
     creator: "@adeoluwaadeoye7",
   },
   icons: {
