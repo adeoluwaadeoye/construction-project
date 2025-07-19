@@ -6,7 +6,9 @@ import { motion } from "framer-motion";
 export default function Hero() {
   return (
     <section
-      className="relative w-full h-screen bg-[url('/images/about.jpg')] bg-cover bg-center bg-no-repeat bg-fixed flex items-center justify-center px-6 sm:px-10 md:px-20 lg:px-32"
+      className="relative w-full h-screen flex items-center justify-center px-6 sm:px-10 md:px-20 lg:px-32
+      bg-black bg-[url('/images/about.jpg')] bg-cover bg-center bg-no-repeat
+      sm:bg-fixed" // Only fixed background on sm+ screens
     >
       {/* Dark Overlay */}
       <div className="absolute inset-0 bg-black/70 z-0" />

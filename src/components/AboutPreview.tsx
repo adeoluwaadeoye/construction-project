@@ -12,22 +12,22 @@ import CounterSection from "./CounterSection";
 export default function WhyChooseUs() {
   const features = [
     {
-      icon: <FaHardHat className="text-3xl sm:text-4xl text-white" />,
+      icon: <FaHardHat className="text-2xl sm:text-3xl lg:text-4xl text-white" />,
       title: "Experienced Team",
       desc: "Our skilled professionals bring years of expertise to every project.",
     },
     {
-      icon: <FaTruckMonster className="text-3xl sm:text-4xl text-white" />,
+      icon: <FaTruckMonster className="text-2xl sm:text-3xl lg:text-4xl text-white" />,
       title: "Modern Equipment",
       desc: "We use powerful and modern machinery to ensure top-notch delivery.",
     },
     {
-      icon: <FaRegClock className="text-3xl sm:text-4xl text-white" />,
+      icon: <FaRegClock className="text-2xl sm:text-3xl lg:text-4xl text-white" />,
       title: "Timely Delivery",
       desc: "We prioritize deadlines and deliver without compromising quality.",
     },
     {
-      icon: <FaHandshake className="text-3xl sm:text-4xl text-white" />,
+      icon: <FaHandshake className="text-2xl sm:text-3xl lg:text-4xl text-white" />,
       title: "Client Satisfaction",
       desc: "Our reputation is built on transparency, integrity, and trust.",
     },
@@ -36,12 +36,13 @@ export default function WhyChooseUs() {
   return (
     <>
       <section
-        className="relative w-full min-h-screen overflow-hidden isolate px-6 sm:px-8 md:px-10 lg:px-16 py-20 sm:py-28 flex items-center bg-[url('/images/helmetbg.jpg')] bg-cover bg-center bg-no-repeat bg-fixed"
+        className="relative w-full min-h-screen overflow-hidden isolate px-6 sm:px-8 md:px-10 lg:px-16 py-20 sm:py-28 flex items-center
+        bg-black bg-[url('/images/helmetbg.jpg')] bg-cover bg-center bg-no-repeat sm:bg-fixed"
       >
         {/* Overlay */}
         <div className="absolute inset-0 bg-black/80 z-0" />
 
-        {/* Stacked Content */}
+        {/* Content */}
         <div className="relative z-10 w-full max-w-6xl mx-auto flex flex-col gap-14 text-white">
           {/* Text Section */}
           <div>
@@ -52,7 +53,7 @@ export default function WhyChooseUs() {
               Trusted Construction,{" "}
               <br className="hidden md:block" /> Every Step of the Way
             </h2>
-            <p className="text-sm md:text-base text-white/80 mb-6 leading-relaxed max-w-2xl">
+            <p className="text-sm sm:text-base md:text-lg text-white/80 mb-6 leading-relaxed max-w-2xl">
               At MYCLIENT, we don’t just build structures — we build trust,
               value, and long-term relationships. Our team is committed to
               precision, efficiency, and excellence on every project.
@@ -70,9 +71,9 @@ export default function WhyChooseUs() {
             {features.map((item, idx) => (
               <div
                 key={idx}
-                className="flex items-start gap-4 bg-white/10 p-5 rounded-lg shadow hover:shadow-md transition backdrop-blur-sm"
+                className="flex items-start gap-4 bg-white/10 p-5 rounded-lg shadow hover:shadow-md transition backdrop-blur-md"
               >
-                <div className="p-3 rounded-full bg-white/20 flex items-center justify-center">
+                <div className="min-w-[48px] min-h-[48px] p-3 rounded-full bg-white/20 flex items-center justify-center">
                   {item.icon}
                 </div>
                 <div>
