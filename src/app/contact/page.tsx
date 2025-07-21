@@ -8,6 +8,7 @@ import {
   MessageCircle,
   Loader2,
 } from "lucide-react";
+import Image from "next/image";
 import { useState } from "react";
 import { toast } from "sonner";
 
@@ -82,13 +83,23 @@ export default function ContactPage() {
 
   return (
     <main className="w-full bg-white text-black font-body">
-      <section className="relative h-screen w-full bg-[url('/images/contact.jpg')] bg-cover bg-center bg-no-repeat bg-fixed">
-        <div className="absolute inset-0 bg-black/70 flex items-end justify-start px-6 md:px-36 pb-56">
-          <h1 className="text-white text-5xl md:text-6xl font-heading font-bold tracking-widest">
-            Contact Us
-          </h1>
-        </div>
-      </section>
+      <section className="relative h-[90vh] w-full">
+    <Image
+      src="/images/contact.jpg"
+      alt="Contact"
+      fill
+      className="w-full h-full object-cover md:object-fixed"
+      priority
+      sizes="100vw"
+    />
+    <div className="absolute inset-0 bg-black/70"></div>
+  <div className="relative z-10 flex h-full items-end justify-start px-6 md:px-36 pb-36 md:pb-56">
+    <h1 className="text-white text-4xl md:text-6xl font-heading font-bold tracking-widest">
+      Contact Us
+    </h1>
+  </div>
+</section>
+
 
       {/* Hero */}
       <section className="px-6 md:px-16 py-20 text-center">
