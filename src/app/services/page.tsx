@@ -42,13 +42,13 @@ export default function ServicesPage() {
   return (
     <main className="bg-white w-full text-black font-body">
       {/* Hero Banner */}
-      <section className="relative h-screen w-full bg-[url('/images/serviceimg.jpg')] bg-cover bg-center bg-no-repeat bg-fixed">
-        <div className="absolute inset-0 bg-black/60 flex items-end justify-start px-6 md:px-36 pb-32 md:pb-56">
+      <section className="relative h-[90vh] w-full bg-[url('/images/serviceimg.jpg')] bg-cover bg-center bg-no-repeat md:bg-fixed">
+        <div className="absolute inset-0 bg-black/60 flex items-end justify-start px-6 sm:px-12 md:px-36 pb-24 sm:pb-36 md:pb-56">
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
-            className="text-white text-4xl md:text-6xl font-heading font-bold tracking-widest"
+            className="text-white text-4xl sm:text-5xl md:text-6xl font-heading font-bold tracking-widest"
           >
             Our Services
           </motion.h1>

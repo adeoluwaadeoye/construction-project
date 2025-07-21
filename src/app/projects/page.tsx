@@ -54,10 +54,10 @@ export default function ProjectsPage() {
   return (
     <main className="bg-white w-full font-body">
       {/* Fixed Background Hero Section */}
-      <section className="relative h-screen w-full bg-[url('/images/residential.jpg')] bg-cover bg-center bg-no-repeat bg-fixed">
-        <div className="absolute inset-0 bg-black/70 flex items-end justify-start px-36 pb-56">
-          <h1 className="text-white text-5xl md:text-6xl font-heading font-bold tracking-widest">
-            Our Projects 
+      <section className="relative h-[90vh] w-full bg-[url('/images/residential.jpg')] bg-cover bg-center bg-no-repeat md:bg-fixed">
+        <div className="absolute inset-0 bg-black/70 flex items-end justify-start px-6 sm:px-12 md:px-36 pb-32 sm:pb-44 md:pb-56">
+          <h1 className="text-white text-4xl sm:text-5xl md:text-6xl font-heading font-bold tracking-widest">
+            Our Projects
           </h1>
         </div>
       </section>

@@ -3,7 +3,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState, useRef } from "react";
-import { Building2, Wrench, Users, ShieldCheck, Award, Lightbulb } from "lucide-react";
+import {
+  Building2,
+  Wrench,
+  Users,
+  ShieldCheck,
+  Award,
+  Lightbulb,
+} from "lucide-react";
 import { motion, useAnimation, useInView } from "framer-motion";
 
 export default function AboutPage() {
@@ -38,9 +45,9 @@ export default function AboutPage() {
   return (
     <main className="w-full bg-white text-black font-body">
       {/* Hero Section */}
-      <section className="relative h-screen w-full bg-[url('/images/about-hero.jpg')] bg-cover bg-center bg-no-repeat bg-fixed">
-        <div className="absolute inset-0 bg-black/70 flex items-end justify-start px-6 md:px-36 pb-56">
-          <h1 className="text-white text-5xl md:text-6xl font-heading font-bold tracking-widest">
+      <section className="relative h-[90vh] w-full bg-[url('/images/about-hero.jpg')] bg-cover bg-center bg-no-repeat md:bg-fixed">
+        <div className="absolute inset-0 bg-black/70 flex items-end justify-start px-6 md:px-36 pb-36">
+          <h1 className="text-white text-4xl sm:text-5xl md:text-6xl font-heading font-bold tracking-widest">
             About Us
           </h1>
         </div>
@@ -51,19 +58,22 @@ export default function AboutPage() {
         <div className="max-w-6xl mx-auto flex flex-col lg:flex-row gap-y-16 lg:gap-x-16 items-start">
           {/* LEFT TEXT */}
           <div className="w-full lg:w-1/2 space-y-6">
-            <h4 className="text-sm text-gray-500 uppercase tracking-widest">About Us</h4>
+            <h4 className="text-sm text-gray-500 uppercase tracking-widest">
+              About Us
+            </h4>
             <h2 className="text-4xl md:text-5xl font-heading font-bold leading-tight">
               Building Trust. Delivering Excellence.
             </h2>
             <p className="text-gray-700 leading-relaxed text-lg">
-              With over 25 years of experience, MYCLIENT is a trusted name in construction
-              across Nigeria. We specialize in delivering high-quality residential,
-              commercial, and civil engineering projects using cutting-edge tools and
-              innovative techniques.
+              With over 25 years of experience, MYCLIENT is a trusted name in
+              construction across Nigeria. We specialize in delivering
+              high-quality residential, commercial, and civil engineering
+              projects using cutting-edge tools and innovative techniques.
             </p>
             <p className="text-gray-700 text-base leading-relaxed">
-              Whether it’s a modern housing estate, a corporate tower, or a critical
-              infrastructure project, we bring deep technical expertise and a customer-first mindset.
+              Whether it’s a modern housing estate, a corporate tower, or a
+              critical infrastructure project, we bring deep technical expertise
+              and a customer-first mindset.
             </p>
             <Link
               href="/contact"
@@ -94,7 +104,10 @@ export default function AboutPage() {
 
               {/* Floating Cards (only on lg+) */}
               <div className="absolute top-48 -right-10 space-y-3 z-20 hidden lg:block">
-                <InfoCard icon={<Building2 size={20} />} title="300+ Projects" />
+                <InfoCard
+                  icon={<Building2 size={20} />}
+                  title="300+ Projects"
+                />
                 <InfoCard icon={<Wrench size={20} />} title="Modern Tools" />
                 <InfoCard icon={<Users size={20} />} title="Skilled Pros" />
               </div>
@@ -129,9 +142,21 @@ export default function AboutPage() {
       {/* Mission, Vision, Values */}
       <section className="bg-gray-100 py-20 px-6 md:px-16">
         <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 text-center">
-          <Card icon={<ShieldCheck className="text-blue-600" />} title="Mission" text="To deliver sustainable, innovative, and top-quality construction services that exceed client expectations." />
-          <Card icon={<Lightbulb className="text-yellow-500" />} title="Vision" text="To be the most reliable and respected construction partner across Africa." />
-          <Card icon={<Award className="text-green-600" />} title="Values" text="Integrity, Innovation, Safety, Teamwork, and Excellence." />
+          <Card
+            icon={<ShieldCheck className="text-blue-600" />}
+            title="Mission"
+            text="To deliver sustainable, innovative, and top-quality construction services that exceed client expectations."
+          />
+          <Card
+            icon={<Lightbulb className="text-yellow-500" />}
+            title="Vision"
+            text="To be the most reliable and respected construction partner across Africa."
+          />
+          <Card
+            icon={<Award className="text-green-600" />}
+            title="Values"
+            text="Integrity, Innovation, Safety, Teamwork, and Excellence."
+          />
         </div>
       </section>
     </main>
@@ -175,7 +200,15 @@ function Counter({ target }: { target: number }) {
   return <>{count}</>;
 }
 
-function Card({ icon, title, text }: { icon: React.ReactNode; title: string; text: string }) {
+function Card({
+  icon,
+  title,
+  text,
+}: {
+  icon: React.ReactNode;
+  title: string;
+  text: string;
+}) {
   return (
     <motion.div
       className="bg-white p-8 rounded-lg shadow hover:shadow-lg transition"
